@@ -1,5 +1,5 @@
-["poetry.toml".virtualenvs]
-in-project = true
+[["poetry.toml".contains]]  # nitpick only reads this is a text file
+line = "in-project = true"
 
 ["pyproject.toml".tool.poetry.dependencies]
 python = "^3.8"
