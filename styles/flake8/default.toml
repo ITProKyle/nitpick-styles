@@ -1,0 +1,18 @@
+["setup.cfg".flake8]
+# http://www.pydocstyle.org/en/2.1.1/error_codes.html
+# D203 - No blank lines allowed after function docstring
+# D213 - Multi-line docstring summary should start at the second line
+# D215 - Section underline is over-indented
+# D403 - First word of the first line should be properly capitalized
+# D406 - Section name should end with a newline
+# D407 - Missing dashed underline after section
+# D408 - Section underline should be in the line following the section’s name
+# D409 - Section underline should match the length of its name
+# D415 - First line should end with a period, question mark, or exclamation point
+# E203 - Whitespace before ':' - black compatible
+# W503 - Line break before operator
+docstring-convention = "all"
+exclude = ".eggs,.serverless,.venv,*.pyi,build,dist,node_modules,typings"
+extend-ignore = "D203,D213,D215,D403,D406,D407,D408,D409,D415,E203,W503"
+ignore-decorators = "overload"
+max-line-length = 98
