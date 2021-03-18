@@ -15,4 +15,4 @@ exclude = '''
 '''
 include = '\.pyi?$'
 line-length = 88
-target-version = ["py38", "py39"]
+target-version = ["py38"]
