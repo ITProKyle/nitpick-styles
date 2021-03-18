@@ -1,0 +1,13 @@
+["pyproject.toml".tool.isort]
+profile = "black"
+skip = [
+  "_build",
+  ".eggs",
+  ".git",
+  ".runway",
+  ".serverless",
+  ".venv",
+  "build",
+  "dist",
+  "node_modules"
+]
