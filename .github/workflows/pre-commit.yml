@@ -17,5 +17,5 @@ jobs:
       - name: Install Poetry
         uses: Gr1N/setup-poetry@v4
       - name: Install Dependencies
-        run: poetry install --extras docs -vv
+        run: poetry install -vv
       - uses: pre-commit/action@v2.0.0

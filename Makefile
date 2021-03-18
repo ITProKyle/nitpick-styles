@@ -19,7 +19,7 @@ help: ## show this message
 run-pre-commit: ## run pre-commit against all files
 	@poetry run pre-commit run -a
 
-setup: setup-poetry setup-precommit  ## setup development environment
+setup: setup-poetry setup-pre-commit  ## setup development environment
 
 setup-poetry:  ## setup poetry environment
 	@poetry install

@@ -1,0 +1,24 @@
+# https://nitpick.readthedocs.io/en/latest/index.html
+
+[nitpick]
+minimum_version = "0.26.0"
+
+[nitpick.files.absent]
+".isort.cfg" = "move values to pyproject.toml, section [tool.isort]"
+".pyup.yml" = "configure safety instead: https://github.com/pyupio/safety#using-safety-with-a-ci-service"
+"Pipfile.lock" = "use pyproject.toml instead"
+"Pipfile" = "ese pyproject.toml instead"
+"requirements.txt" = "install poetry, run 'poetry init' to create pyproject.toml, and move dependencies to it"
+"tox.ini" = "use pyproject.toml instead"
+
+[nitpick.files.present]
+".editorconfig" = "project should have editor config"
+".envrc" = "direnv should be used for setting environment variables of a project"
+".pre-commit-config.yaml" = "project should use pre-commit"
+".vscode/extensions.json" = "project should recommend vscode extensions"
+".vscode/settings.json" = "project should include standardized vscode settings"
+"poetry.toml" = ""
+"README.md" = "project should have a README."
+
+[nitpick.files."setup.cfg"]
+comma_separated_values = ["flake8.exclude", "flake8.extend-ignore", "flake8.ignore-decorators"]
