@@ -1,0 +1,80 @@
+["pyproject.toml".tool.pylint.basic]
+# http://pylint.pycqa.org/en/latest/technical_reference/features.html#basic-checker
+good-names = [
+  "_",
+  "a",
+  "b",
+  "ca",
+  "ci",
+  "db",
+  "f",
+  "fn",
+  "i",
+  "id",
+  "j",
+  "k",
+  "ok",
+  "s3",
+  "ui",
+  "up",
+  "v",
+]
+
+["pyproject.toml".tool.pylint.classes]
+# http://pylint.pycqa.org/en/latest/technical_reference/features.html#classes-checker
+defining-attr-methods = [
+  "__init__",
+  "__new__"
+]
+
+["pyproject.toml".tool.pylint.design]
+# http://pylint.pycqa.org/en/latest/technical_reference/features.html#design-checker-options
+max-args = 50
+max-attributes = 50
+max-bool-expr = 5
+max-branches = 20
+max-locals = 25
+max-parents = 10
+max-public-methods = 30
+max-returns = 6
+max-statements = 50
+min-public-methods = 0
+
+["pyproject.toml".tool.pylint.format]
+# http://pylint.pycqa.org/en/latest/technical_reference/features.html#format-checker
+max-line-length = 100
+max-module-lines = 1000
+
+["pyproject.toml".tool.pylint.imports]
+# http://pylint.pycqa.org/en/latest/technical_reference/features.html#imports-checker
+allow-wildcard-with-all = "no"
+
+["pyproject.toml".tool.pylint.logging]
+# http://pylint.pycqa.org/en/latest/technical_reference/features.html#logging-checker
+logging-format-style = "old"
+
+["pyproject.toml".tool.pylint.master]
+# http://pylint.pycqa.org/en/latest/technical_reference/features.html#general-options
+jobs = 0
+
+["pyproject.toml".tool.pylint.miscellaneous]
+# http://pylint.pycqa.org/en/latest/technical_reference/features.html#miscellaneous-checker
+notes = [
+  "FIXME",
+]
+
+["pyproject.toml".tool.pylint.message_control]
+# http://pylint.pycqa.org/en/latest/technical_reference/features.html#messages-control-options
+disable = [
+  "line-too-long",  # flake8 overlap
+  "missing-class-docstring",  # flake8 (pydocstyle) overlap
+  "missing-function-docstring",  # flake8 (pydocstyle) overlap
+  "missing-module-docstring",  # flake8 (pydocstyle) overlap
+  "similarities",  # black overcomplicates this
+  "ungrouped-imports",  # handled by isort
+]
+
+["pyproject.toml".tool.pylint.reports]
+msg-template="{path}:{line}:{column}: {msg_id}: {msg} ({symbol})"
+output-format="colorized"
+score="yes"
