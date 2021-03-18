@@ -1,0 +1,16 @@
+[tool.pytest.ini_options]
+addopts = [
+  "--code-highlight=yes",
+  "--color=auto",
+  "--cov-config=pyproject.toml",
+  "--no-cov-on-fail",
+  "--strict-markers",
+]
+minversion = 6.0
+mock_use_standalone_module = true
+testpaths = [
+  "tests",
+]
+markers = [
+  "wip: isolate tests currently being worked on.",
+]
