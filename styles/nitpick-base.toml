@@ -13,7 +13,6 @@ minimum_version = "0.26.0"
 
 [nitpick.files.present]
 ".editorconfig" = "project should have editor config"
-".envrc" = "direnv should be used for setting environment variables of a project"
 ".pre-commit-config.yaml" = "project should use pre-commit"
 ".vscode/extensions.json" = "project should recommend vscode extensions"
 ".vscode/settings.json" = "project should include standardized vscode settings"
