@@ -1,4 +1,4 @@
-[tool.pytest.ini_options]
+["pyproject.toml".tool.pytest.ini_options]
 addopts = [
   "--code-highlight=yes",
   "--color=auto",
