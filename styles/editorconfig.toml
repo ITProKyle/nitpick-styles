@@ -8,7 +8,7 @@ indent_style = "space"
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[".editorconfig"."*.{html,js,jsx,md,rst,toml,ts,xml,yml,yaml}"]
+[".editorconfig"."*.{html,js,jsx,rst,toml,ts,xml,yml,yaml}"]
 indent_size = 2
 
 [".editorconfig"."*.py"]
