@@ -21,3 +21,6 @@ minimum_version = "0.26.0"
 
 [nitpick.files."setup.cfg"]
 comma_separated_values = ["flake8.exclude", "flake8.extend-ignore", "flake8.ignore-decorators"]
+
+[["poetry.toml".contains]]  # nitpick only reads this is a text file
+line = "in-project = true"
